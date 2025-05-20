@@ -1,0 +1,52 @@
+OpenROAD v2.0-19576-gec1bf1a13 
+Features included (+) or not (-): +GPU +GUI +Python : None
+This program is licensed under the BSD-3 license. See the LICENSE file for details.
+Components of this program may be licensed under more restrictive licenses which must be honored.
+[INFO ORD-0030] Using 6 thread(s).
+source /OpenROAD-flow-scripts/flow/platforms/asap7/setRC.tcl
+Perform port buffering...
+[INFO RSZ-0027] Inserted 149 input buffers.
+[INFO RSZ-0028] Inserted 100 output buffers.
+Perform buffer insertion and gate resizing...
+repair_design -verbose
+[INFO RSZ-0058] Using max wire length 162um.
+Iteration |   Area    | Resized | Buffers | Nets repaired | Remaining
+---------------------------------------------------------------------
+        0 |     +0.0% |       0 |       0 |             0 |     19507
+     1000 |     +0.0% |       2 |       0 |             0 |     18507
+     2000 |     +0.0% |       3 |       0 |             0 |     17507
+     3000 |     +0.0% |      15 |       0 |             0 |     16507
+     4000 |     +0.0% |      17 |       0 |             0 |     15507
+     5000 |     +0.0% |      22 |       0 |             0 |     14507
+     6000 |     +0.0% |      28 |       0 |             0 |     13507
+     7000 |     +0.0% |      34 |       0 |             0 |     12507
+     8000 |     +0.0% |      37 |       0 |             0 |     11507
+     9000 |     +0.0% |      40 |       0 |             0 |     10507
+    10000 |     +0.0% |      50 |       0 |             0 |      9507
+    11000 |     +0.0% |      54 |       0 |             0 |      8507
+    12000 |     +0.0% |      63 |       0 |             0 |      7507
+    13000 |     +0.0% |      69 |       0 |             0 |      6507
+    14000 |     +0.0% |      79 |       0 |             0 |      5507
+    15000 |     +0.0% |      87 |       0 |             0 |      4507
+    16000 |     -0.0% |     101 |       0 |             0 |      3507
+    17000 |     -0.0% |     114 |       0 |             0 |      2507
+    18000 |     -0.0% |     117 |       0 |             0 |      1507
+    19000 |     -0.0% |     122 |       0 |             0 |       507
+    final |     +0.0% |     141 |       0 |             0 |         0
+---------------------------------------------------------------------
+[INFO RSZ-0039] Resized 141 instances.
+Took 16 seconds: repair_design -verbose
+Repair tie lo fanout...
+[INFO RSZ-0042] Inserted 6 tie TIELOx1_ASAP7_75t_R instances.
+Repair tie hi fanout...
+[INFO RSZ-0042] Inserted 1658 tie TIEHIx1_ASAP7_75t_R instances.
+Floating nets: 
+Report metrics stage 3, resizer...
+
+==========================================================================
+resizer report_design_area
+--------------------------------------------------------------------------
+Design area 2540 u^2 45% utilization.
+Instance count before 19531, after 21442
+Pin count before 68435, after 70595
+Elapsed time: 1:59.37[h:]min:sec. CPU time: user 130.00 sys 12.44 (119%). Peak memory: 568184KB.
